@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Happy B&#39;day Baby &lt;3</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+<div id="fog"></div>
+
+<div class="window scene animated" id="scene0">
+  <div class="tv-frame vhs-effect">
+    <div class="tv-screen flicker">
+      <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdDg4cjRicmY4aTl2a3AwNHNwNWpydDhkYWtkamp2MXU1NjBxemU4cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/IiHnRj9aWbJ0MxYpi8/giphy.gif" alt="Memory GIF" class="memory-gif" />
+      <div class="tv-glow"></div>
+    </div>
+  </div>
+  <audio id="vhsSound" src="https://cdn.pixabay.com/download/audio/2021/09/14/audio_cfb9c2a2be.mp3?filename=old-cassette-player-7035.mp3"></audio>
+  <button onclick="playVHSSound(); nextScene(1)">Tap to Continue</button>
+</div>
+
+<div class="window scene animated hidden" id="scene1">
+  <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWRzenBuZWx5d2htdzQ0dzh3NWlhdHRmOHZ2YzBvN3Q0OWd2ZHJmaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/HRQ17Ss5vHs2i3RXoO/giphy.gif" alt="Cute Animated Cat" class="cat-img" id="cat">
+  <h1 class="typing" id="scene1text"></h1>
+  <button onclick="nextScene(2)">Yes!</button>
+</div>
+
+<div class="window scene hidden animated" id="scene2">
+  <h1 class="typing" id="scene2text"></h1>
+  <button onclick="nextScene(3)">I love you</button>
+  <button onclick="nextScene(3)">I love you</button>
+  <button class="secret-btn" onclick="showSecret()">I miss you</button>
+</div>
+
+<div class="window scene hidden animated" id="scene3">
+  <div id="giftbox" onclick="openGift()">
+    <div class="lid"></div>
+    <div class="box"></div>
+  </div>
+  <p id="clickMeText" class="pixel-text hidden">Click Me!</p> <div id="videoPopup" class="hidden">
+    <iframe src="https://drive.google.com/file/d/1l0DXc_TlFKpJ9-ZmXieNBbs_XcOV_xsi/preview" width="640" height="360" allow="autoplay" style="border:4px solid red;"></iframe>
+  </div>
+</div>
+
+<div class="window scene hidden animated" id="secretScene">
+  <h1>Bonus Message! 💌</h1>
+  <p>Awwee..Patootie..I miss you too but it is your b'day, handsome. Now go refresh the page n click on 'I love you' like a good boy cuz ur girl doesn't know how to make a 'go back to the prev page' button😿❤️</p>
+</div>
+
+<div id="kiss" class="hidden">💋</div>
+
+<canvas id="confetti"></canvas>
+
+<audio autoplay loop>
+  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+</audio>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
